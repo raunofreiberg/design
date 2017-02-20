@@ -1,0 +1,104 @@
+body {
+  background-image: url('http://fay.io/w/space.jpg');
+  background-repeat: repeat;
+  background-position: top center;
+}
+
+.rotate-container-1 {
+  animation: shrink 6s linear infinite,
+             fade 6s linear infinite;
+  .rotate {
+    animation: spin 6s linear infinite;
+  }
+  .rotate-object {
+    background: url('http://fay.io/w/doge.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+.rotate-container-2 {
+  animation: shrink 6s linear infinite 2s,
+             fade 6s linear infinite 2s;
+  .rotate {
+    animation: spin 6s linear infinite 2s;
+  }
+  .rotate-object {
+    background: url('http://fay.io/w/wrecking-ball(1).png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+.rotate-container-3 {
+  animation: shrink 6s linear infinite 4s,
+             fade 6s linear infinite 4s;
+  .rotate {
+    animation: spin 6s linear infinite 2s;
+  }
+  .rotate-object {
+    background: url('http://fay.io/w/grumpy-cat.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+.rotate-container {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 1em;
+  height: 1em;
+  margin: auto;
+  -webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+}
+
+.rotate {
+  position: absolute;
+  top: 50%;;
+  left: 50%;
+  width: 1em;
+  height: 20em;
+  margin-left: -.5em;
+  transform-origin: 50% 0;
+}
+
+.rotate-object {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 5em;
+  height: 5em;
+  margin-left: -2.5em;
+  animation: spin 20s linear infinite;    
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale( 3 );
+  }
+  to {
+    transform: scale( 0 );
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
