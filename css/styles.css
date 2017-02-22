@@ -3,8 +3,8 @@ body {
     padding: 0;
     font-family: 'Poppins';
     background: #517fa4; /* fallback for old browsers */
-    background: -webkit-linear-gradient(45deg, #1c2d3c, #171c21); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45deg, #1c2d3c, #171c21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #1c2d3c, #171c21); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1c2d3c, #171c21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 }
 
