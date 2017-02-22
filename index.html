@@ -2,142 +2,34 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Doge in space</title>
+  <title>Tartu</title>
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+  
+      <link rel="stylesheet" href="css/styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      body {
-  background-image: url("http://fay.io/w/space.jpg");
-  background-repeat: repeat;
-  background-position: top center;
-}
-
-.rotate-container-1 {
-  animation: shrink 6s linear infinite, fade 6s linear infinite;
-}
-.rotate-container-1 .rotate {
-  animation: spin 6s linear infinite;
-}
-.rotate-container-1 .rotate-object {
-  background: url("http://fay.io/w/doge.png") no-repeat;
-  background-size: 100%;
-}
-
-.rotate-container-2 {
-  animation: shrink 6s linear infinite 2s, fade 6s linear infinite 2s;
-}
-.rotate-container-2 .rotate {
-  animation: spin 6s linear infinite 2s;
-}
-.rotate-container-2 .rotate-object {
-  background: url("http://fay.io/w/wrecking-ball(1).png") no-repeat;
-  background-size: 100%;
-}
-
-.rotate-container-3 {
-  animation: shrink 6s linear infinite 4s, fade 6s linear infinite 4s;
-}
-.rotate-container-3 .rotate {
-  animation: spin 6s linear infinite 2s;
-}
-.rotate-container-3 .rotate-object {
-  background: url("http://fay.io/w/grumpy-cat.png") no-repeat;
-  background-size: 100%;
-}
-
-.rotate-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 1em;
-  height: 1em;
-  margin: auto;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-}
-
-.rotate {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1em;
-  height: 20em;
-  margin-left: -.5em;
-  transform-origin: 50% 0;
-}
-
-.rotate-object {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 5em;
-  height: 5em;
-  margin-left: -2.5em;
-  animation: spin 20s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes shrink {
-  from {
-    transform: scale(3);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-    </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
 </head>
 
 <body>
-  <div class="rotate-container rotate-container-1">
-  <div class="rotate">
-    <div class="rotate-object"></div>
-  </div>
-</div>
+    <header>
+        <h1>Study Information System</h1>
+        <img class="logo" src="/img/tartu.svg">
+        <div class="en">EN</div>        
+<div class="log">
+    <div class="line"></div>
+<form>    
+        <div class="login" contenteditable="true">Username</div>
+        <div class="password" contenteditable="true">Password</div>
+</form>        
+    <div class="forgot">Forgot password?</div>
+    <div class="submit">Sign In</div>
+    <div class="line2"></div>
+    </div>
+        </header>
 
-<div class="rotate-container rotate-container-2">
-  <div class="rotate">
-    <div class="rotate-object"></div>
-  </div>
-</div>
-
-<div class="rotate-container rotate-container-3">
-  <div class="rotate">
-    <div class="rotate-object"></div>
-  </div>
-</div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  
-</body>
-</html>
+        
+ </body>
+ <html>

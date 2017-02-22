@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir Next';
+    background: #517fa4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #1c2d3c, #171c21); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #1c2d3c, #171c21); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 48px;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.en {
+    font-size: 18px;
+    color: #fafafa;
+    font-weight: 100;
+    position: absolute;
+    right: 50px;
+    top: 81px;
+}
+
+.log {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    font-family: 'Poppins';
+
+}
+
+.line {
+    width: 210px;
+    background-color: #0060AA;
+    height: 1px;
+    position: absolute;
+    top: -61px;
+}
+
+.login {
+    width: 200px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.25);
+    text-align: left;
+    border-radius: 20px;
+    padding-left: 9px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+.password {
+    width: 200px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.25);
+    text-align: left;
+    border-radius: 20px;
+    padding-left: 9px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.forgot {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.25);
+    letter-spacing: 1px;
+
+}
+
+.submit {
+    width: 120px;
+    height: 30px;
+    background: #0060AA;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease 0s;
+
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    background: #003f6f;
+    cursor: pointer;
+
+}
+
+.line2 {
+    width: 210px;
+    background-color: #0060AA;
+    height: 1px;
+    position: absolute;
+    bottom: -61px;
+}
