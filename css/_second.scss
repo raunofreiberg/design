@@ -1,0 +1,82 @@
+.gallery {
+    //background: lightgreen;
+    height: 80vh;
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
+        @include breakpoint(phone) {
+            flex-wrap: wrap;
+        }
+    .left-container {
+        //background: pink;
+        display: flex;
+        padding: 20px; 
+        padding-left: 50px;
+        margin-top: 50px;
+        flex-basis: 50%;
+            @include breakpoint(phone) {
+                flex-wrap: wrap;
+                order: 2;
+            }
+            .image {
+                height: 600px;
+                margin-right: 10px;
+                width: 300px;
+                background-image: url("/img/left.png");
+                background-size: cover;
+                background-position: center;
+                    @include breakpoint(phone) {
+                        margin-top: 20px;
+                    }    
+                    &:nth-child(2) {
+                        background-image: url("/img/center.png");
+                        background-size: cover;
+                        background-position: center;
+                    }        
+                    &:last-child {
+                        background-image: url("/img/right.png");
+                        background-size: cover;
+                        background-position: center;
+                        margin-right: 0px;
+                    }
+            }
+    }
+    .right-container {
+        //background: lightseagreen;
+        margin-left: 75px;
+        flex-basis: 800px;
+        font-family: $mainfont;
+            @include breakpoint(phone) {
+                margin-left: 20px;
+                text-align: center;
+            }
+            h1 {
+                font-size: 48px;
+                font-weight: 400;
+                margin-top: 200px;            
+            }
+              .line {
+                    background: red;
+                    width: 50px;
+                    height: 2px; 
+                    margin-top: -10px;  
+                    @include breakpoint(phone) {
+                        margin: 0 auto;
+                    }                 
+
+                }
+                p {        
+                    max-width: 400px;
+                    color: $textgrey;
+                    font-weight: 100;
+                    margin-top: 50px;
+                }
+                .button {
+                    @include button;
+                    margin-top: 50px;
+                    @include breakpoint(phone) {
+                        margin: 50px auto 0;
+                    }
+                }
+    }
+}

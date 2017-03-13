@@ -1,0 +1,13 @@
+  //IMPORT BASE MIXINS & STYLES
+@import '1-base/_vars.scss';
+@import '1-base/_mixins.scss';
+@import '1-base/_breakpoints.scss';
+  
+  // FIRST PAGE
+@import '_landing.scss';
+
+  // FIRST SECTION
+@import '_perfection.scss';  
+
+  //SECOND SECTION
+@import '_second.scss';  

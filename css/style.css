@@ -1,0 +1,392 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container nav {
+  align-self: flex-start;
+  position: absolute;
+  margin-top: 30px;
+  color: #222; }
+
+.container nav ul {
+  list-style-type: none;
+  display: flex; }
+
+.container nav ul:after {
+  content: '';
+  width: 100%;
+  height: 1.5px;
+  background: #FD5B53;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0px; }
+
+.container nav ul li {
+  font-family: "Avenir Next";
+  text-transform: uppercase;
+  margin-right: 120px;
+  letter-spacing: 3px;
+  transition: all 200ms ease-in-out; }
+
+.container nav ul li:hover {
+  color: #FD5B53;
+  cursor: pointer; }
+
+.container nav ul li:last-child {
+  margin-right: 0; }
+
+.container .main-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container .main-container h1 {
+  font-family: "Avenir Next";
+  text-transform: uppercase;
+  font-size: 150px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: absolute;
+  color: #222;
+  margin: auto;
+  z-index: 1; }
+
+@media (max-width: 1080px) {
+  .container .main-container h1 {
+    font-size: 100px; } }
+
+@media (max-width: 479px) {
+  .container .main-container h1 {
+    font-size: 40px; } }
+
+.container .main-container h1 #xr {
+  font-size: 300px;
+  font-family: "Avenir Next";
+  font-weight: bold;
+  color: #222;
+  position: relative;
+  z-index: 1; }
+
+@media (max-width: 1080px) {
+  .container .main-container h1 #xr {
+    font-size: 200px; } }
+
+@media (max-width: 767px) {
+  .container .main-container h1 #xr {
+    font-size: 50px; } }
+
+@media (max-width: 479px) {
+  .container .main-container h1 #xr {
+    font-size: 100px; } }
+
+.container .main-container h1 #number {
+  color: #FD5B53;
+  font-size: 300px;
+  font-family: 'Bebas Neue';
+  font-weight: 100;
+  margin-left: -20px; }
+
+@media (max-width: 1080px) {
+  .container .main-container h1 #number {
+    font-size: 200px; } }
+
+@media (max-width: 479px) {
+  .container .main-container h1 #number {
+    font-size: 100px;
+    margin-left: -10px; } }
+
+.container .main-container h1 #number:before {
+  content: 'the lamborghini of sneakers';
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: absolute;
+  font-family: "Avenir Next";
+  left: 10px;
+  font-size: 18px;
+  top: 90px;
+  color: #adadad;
+  font-weight: 400; }
+
+@media (max-width: 1080px) {
+  .container .main-container h1 #number:before {
+    font-size: 16px;
+    top: 55px; } }
+
+@media (max-width: 479px) {
+  .container .main-container h1 #number:before {
+    display: none; } }
+
+.container .main-container h1 #number:after {
+  content: '';
+  background: #FD5B53;
+  width: 845px;
+  height: 24px;
+  position: absolute;
+  top: 116.5px;
+  right: 87px; }
+
+@media (max-width: 1080px) {
+  .container .main-container h1 #number:after {
+    width: 560px;
+    right: 59px;
+    top: 77px;
+    height: 16px; } }
+
+@media (max-width: 479px) {
+  .container .main-container h1 #number:after {
+    top: 38px;
+    height: 10px;
+    right: 20px;
+    width: 270px; } }
+
+.container .main-container .sneaker {
+  background-image: url("../img/sneaker.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  height: 100%;
+  transform: scale(0.75);
+  width: 100%;
+  position: relative;
+  z-index: 2; }
+
+@media (max-width: 1080px) {
+  .container .main-container .sneaker {
+    transform: scale(0.5); } }
+
+@media (max-width: 767px) {
+  .container .main-container .sneaker {
+    transform: scale(0.2);
+    width: 100%;
+    height: 100%; } }
+
+@media (max-width: 479px) {
+  .container .main-container .sneaker {
+    background-image: url("../img/sneaker_xs.png");
+    transform: scale(0.55);
+    width: 1200px;
+    height: 100%; } }
+
+.adidas {
+  height: 100vh; }
+
+.perfection {
+  max-width: 1600px;
+  height: 100vh;
+  display: flex;
+  margin: auto; }
+
+@media (max-width: 479px) {
+  .perfection {
+    flex-wrap: wrap;
+    height: 100%; } }
+
+.perfection .left-container {
+  flex-basis: 80%; }
+
+@media (max-width: 1500px) {
+  .perfection .left-container {
+    flex-basis: 150%;
+    margin-top: 70px; } }
+
+.perfection .item {
+  width: 300px;
+  height: 300px;
+  position: relative; }
+
+@media (max-width: 479px) {
+  .perfection .item {
+    position: static; } }
+
+.perfection .item:first-child {
+  background-image: url("../img/first.png");
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  left: 180px;
+  transition: all 400ms ease-in-out; }
+
+.perfection .item:first-child:hover {
+  filter: brightness(30%);
+  cursor: pointer;
+  z-index: 3; }
+
+.perfection .item:last-child {
+  background-image: url("../img/second.png");
+  background-size: cover;
+  left: 380px;
+  width: 400px;
+  height: 400px;
+  bottom: 580px;
+  transition: all 400ms ease-in-out; }
+
+.perfection .item:last-child:hover {
+  filter: brightness(30%);
+  cursor: pointer; }
+
+.perfection .item:nth-child(2) {
+  background-image: url("../img/third.png");
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  left: 280px;
+  bottom: 300px;
+  transition: all 400ms ease-in-out; }
+
+.perfection .item:nth-child(2):hover {
+  filter: brightness(30%);
+  cursor: pointer;
+  z-index: 3; }
+
+.perfection .right-container {
+  margin-left: 100px;
+  flex-basis: 800px;
+  font-family: "Avenir Next"; }
+
+@media (max-width: 479px) {
+  .perfection .right-container {
+    margin-left: 20px; } }
+
+.perfection .right-container h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-top: 200px; }
+
+.perfection .right-container .line {
+  background: red;
+  width: 50px;
+  height: 2px;
+  margin-top: -10px; }
+
+.perfection .right-container p {
+  max-width: 400px;
+  color: #95989A;
+  font-weight: 100;
+  margin-top: 50px; }
+
+.perfection .right-container .button {
+  width: 140px;
+  height: 35px;
+  font-family: "Avenir Next";
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 35px;
+  border: 2px solid black;
+  letter-spacing: 3px;
+  transition: all 200ms ease-in-out;
+  margin-top: 50px; }
+
+.perfection .right-container .button:hover {
+  background: #FD5B53;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #FD5B53; }
+
+.gallery {
+  height: 80vh;
+  display: flex;
+  max-width: 1600px;
+  margin: auto; }
+
+@media (max-width: 479px) {
+  .gallery {
+    flex-wrap: wrap; } }
+
+.gallery .left-container {
+  display: flex;
+  padding: 20px;
+  padding-left: 50px;
+  margin-top: 50px;
+  flex-basis: 50%; }
+
+@media (max-width: 479px) {
+  .gallery .left-container {
+    flex-wrap: wrap;
+    order: 2; } }
+
+.gallery .left-container .image {
+  height: 600px;
+  margin-right: 10px;
+  width: 300px;
+  background-image: url("/img/left.png");
+  background-size: cover;
+  background-position: center; }
+
+@media (max-width: 479px) {
+  .gallery .left-container .image {
+    margin-top: 20px; } }
+
+.gallery .left-container .image:nth-child(2) {
+  background-image: url("/img/center.png");
+  background-size: cover;
+  background-position: center; }
+
+.gallery .left-container .image:last-child {
+  background-image: url("/img/right.png");
+  background-size: cover;
+  background-position: center;
+  margin-right: 0px; }
+
+.gallery .right-container {
+  margin-left: 75px;
+  flex-basis: 800px;
+  font-family: "Avenir Next"; }
+
+@media (max-width: 479px) {
+  .gallery .right-container {
+    margin-left: 20px;
+    text-align: center; } }
+
+.gallery .right-container h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-top: 200px; }
+
+.gallery .right-container .line {
+  background: red;
+  width: 50px;
+  height: 2px;
+  margin-top: -10px; }
+
+@media (max-width: 479px) {
+  .gallery .right-container .line {
+    margin: 0 auto; } }
+
+.gallery .right-container p {
+  max-width: 400px;
+  color: #95989A;
+  font-weight: 100;
+  margin-top: 50px; }
+
+.gallery .right-container .button {
+  width: 140px;
+  height: 35px;
+  font-family: "Avenir Next";
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 35px;
+  border: 2px solid black;
+  letter-spacing: 3px;
+  transition: all 200ms ease-in-out;
+  margin-top: 50px; }
+
+.gallery .right-container .button:hover {
+  background: #FD5B53;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #FD5B53; }
+
+@media (max-width: 479px) {
+  .gallery .right-container .button {
+    margin: 50px auto 0; } }
