@@ -4,12 +4,13 @@ body {
 }
 
 .container {
-    //background: pink;
+    background: linear-gradient(to top, #f3f3f3, #fafafa);
     height: 100vh;
     @include flex-center;
     nav {
         align-self: flex-start;
         position: absolute;
+        background: pink;
         margin-top: 30px;
         color: $darkblack;
         ul {

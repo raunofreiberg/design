@@ -1,101 +1,115 @@
 .perfection {
     //background: pink;
-    max-width: 1600px;  
+    max-width: 1600px;
     height: 100vh;
     display: flex;
     margin: auto;
-        @include breakpoint(phone) {
-            flex-wrap: wrap;
-            height: 100%;
-            
-        }
+    @include breakpoint(phone) {
+        flex-wrap: wrap;
+        height: 100%;
+    }
     .left-container {
         //background: lightblue;
         flex-basis: 80%;
-            @include breakpoint(1500) {
-                flex-basis: 150%;
-                margin-top: 70px;
-            }
+        @include breakpoint(1500) {
+            flex-basis: 150%;
+            margin-top: 70px;
+        }
     }
+    //ADD MAX/MIN WIDTHS TO ITEMS TO REMOVE HORIZONTAL SCROLL
     .item {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         position: relative;
-            @include breakpoint(phone) {
-                position: static;
-            }
+        @include breakpoint(phone) {
+            position: static;
+        }
         &:first-child {
             background-image: url("../img/first.png");
             background-size: cover;
-            width: 400px;
-            height: 400px;
             left: 180px;
             transition: all 400ms ease-in-out;
-                &:hover {
-                    filter: brightness(30%);
-                    cursor: pointer;
-                    z-index: 3;
-                }
+            @include breakpoint(phone) {
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+            }
+            &:hover {
+                filter: brightness(30%);
+                cursor: pointer;
+                z-index: 3;
+            }
         }
         &:last-child {
             background-image: url("../img/second.png");
             background-size: cover;
             left: 380px;
-            width: 400px;
-            height: 400px;
             bottom: 580px;
             transition: all 400ms ease-in-out;
-                &:hover {
-                    filter: brightness(30%);
-                    cursor: pointer;
-                }
+             @include breakpoint(phone) {
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+            }
+            &:hover {
+                filter: brightness(30%);
+                cursor: pointer;
+            }
         }
         &:nth-child(2) {
             background-image: url("../img/third.png");
             background-size: cover;
-            width: 400px;
-            height: 400px;
             left: 280px;
             bottom: 300px;
             transition: all 400ms ease-in-out;
-                &:hover {
-                    filter: brightness(30%);
-                    cursor: pointer;
-                    z-index: 3;
-                }
+             @include breakpoint(phone) {
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+            }
+            &:hover {
+                filter: brightness(30%);
+                cursor: pointer;
+                z-index: 3;
+            }
         }
-
     }
-
     .right-container {
         //background: lightseagreen;
         margin-left: 100px;
         flex-basis: 800px;
         font-family: $mainfont;
+        @include breakpoint(phone) {  
+            margin: 0 auto;          
+            text-align: center;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 400;
+            margin-top: 200px;
+        }
+        .line {
+            background: red;
+            width: 50px;
+            height: 2px;
+            margin-top: -10px;
             @include breakpoint(phone) {
-                margin-left: 20px;
+                margin: 0 auto;
             }
-            h1 {
-                font-size: 48px;
-                font-weight: 400;
-                margin-top: 200px;            
+        }
+        p {
+            max-width: 400px;
+            color: $textgrey;
+            font-weight: 100;
+            margin-top: 50px;
+        }
+        .button {
+            @include button;
+            margin-top: 50px;
+            @include breakpoint(phone) {
+                margin: 50px auto 0;
             }
-              .line {
-                    background: red;
-                    width: 50px;
-                    height: 2px; 
-                    margin-top: -10px;                   
-
-                }
-                p {        
-                    max-width: 400px;
-                    color: $textgrey;
-                    font-weight: 100;
-                    margin-top: 50px;
-                }
-                .button {
-                    @include button;
-                    margin-top: 50px;
-                }
+        }
     }
 }

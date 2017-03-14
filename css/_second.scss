@@ -1,33 +1,48 @@
+section {
+    background: #f3f3f3;
+}
+
 .gallery {
-    //background: lightgreen;
-    height: 80vh;
+    background: #f3f3f3;
+    height: 90vh;
     display: flex;
     max-width: 1600px;
     margin: auto;
         @include breakpoint(phone) {
             flex-wrap: wrap;
+            height: 100%;
         }
     .left-container {
         //background: pink;
         display: flex;
-        padding: 20px; 
-        padding-left: 50px;
-        margin-top: 50px;
+        padding: 20px;
+        padding-left: 100px;     
+        margin: 100px auto;
         flex-basis: 50%;
+        @include breakpoint(xs) {
+                padding-left: 50px;
+            }
             @include breakpoint(phone) {
                 flex-wrap: wrap;
+                padding: 0;
+                justify-content: center;                
                 order: 2;
+                flex-basis: 80%;
             }
             .image {
-                height: 600px;
+                height: 650px;
                 margin-right: 10px;
-                width: 300px;
+                width: 180px;
                 background-image: url("/img/left.png");
                 background-size: cover;
-                background-position: center;
-                    @include breakpoint(phone) {
-                        margin-top: 20px;
-                    }    
+                background-position: center;                       
+                    @include breakpoint(xs) {
+                        width: 120px;
+                    }
+                    @include breakpoint(phone) {                        
+                        margin: 2px;
+                        width: 81px;
+                    } 
                     &:nth-child(2) {
                         background-image: url("/img/center.png");
                         background-size: cover;
@@ -43,12 +58,13 @@
     }
     .right-container {
         //background: lightseagreen;
-        margin-left: 75px;
+        margin: 0 45px;
         flex-basis: 800px;
         font-family: $mainfont;
-            @include breakpoint(phone) {
-                margin-left: 20px;
+            @include breakpoint(phone) {            
                 text-align: center;
+                padding: 0 20px;
+                margin: 0 auto;
             }
             h1 {
                 font-size: 48px;

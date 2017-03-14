@@ -3,6 +3,7 @@ body {
   padding: 0; }
 
 .container {
+  background: linear-gradient(to top, #f3f3f3, #fafafa);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -11,6 +12,7 @@ body {
 .container nav {
   align-self: flex-start;
   position: absolute;
+  background: pink;
   margin-top: 30px;
   color: #222; }
 
@@ -201,8 +203,8 @@ body {
     margin-top: 70px; } }
 
 .perfection .item {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   position: relative; }
 
 @media (max-width: 479px) {
@@ -212,10 +214,14 @@ body {
 .perfection .item:first-child {
   background-image: url("../img/first.png");
   background-size: cover;
-  width: 400px;
-  height: 400px;
   left: 180px;
   transition: all 400ms ease-in-out; }
+
+@media (max-width: 479px) {
+  .perfection .item:first-child {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto; } }
 
 .perfection .item:first-child:hover {
   filter: brightness(30%);
@@ -226,10 +232,14 @@ body {
   background-image: url("../img/second.png");
   background-size: cover;
   left: 380px;
-  width: 400px;
-  height: 400px;
   bottom: 580px;
   transition: all 400ms ease-in-out; }
+
+@media (max-width: 479px) {
+  .perfection .item:last-child {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto; } }
 
 .perfection .item:last-child:hover {
   filter: brightness(30%);
@@ -238,11 +248,15 @@ body {
 .perfection .item:nth-child(2) {
   background-image: url("../img/third.png");
   background-size: cover;
-  width: 400px;
-  height: 400px;
   left: 280px;
   bottom: 300px;
   transition: all 400ms ease-in-out; }
+
+@media (max-width: 479px) {
+  .perfection .item:nth-child(2) {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto; } }
 
 .perfection .item:nth-child(2):hover {
   filter: brightness(30%);
@@ -256,7 +270,9 @@ body {
 
 @media (max-width: 479px) {
   .perfection .right-container {
-    margin-left: 20px; } }
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px; } }
 
 .perfection .right-container h1 {
   font-size: 48px;
@@ -268,6 +284,10 @@ body {
   width: 50px;
   height: 2px;
   margin-top: -10px; }
+
+@media (max-width: 479px) {
+  .perfection .right-container .line {
+    margin: 0 auto; } }
 
 .perfection .right-container p {
   max-width: 400px;
@@ -293,39 +313,60 @@ body {
   cursor: pointer;
   border: 2px solid #FD5B53; }
 
+@media (max-width: 479px) {
+  .perfection .right-container .button {
+    margin: 50px auto 0; } }
+
+section {
+  background: #f3f3f3; }
+
 .gallery {
-  height: 80vh;
+  background: #f3f3f3;
+  height: 90vh;
   display: flex;
   max-width: 1600px;
   margin: auto; }
 
 @media (max-width: 479px) {
   .gallery {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    height: 100%; } }
 
 .gallery .left-container {
   display: flex;
   padding: 20px;
-  padding-left: 50px;
-  margin-top: 50px;
+  padding-left: 100px;
+  margin: 100px auto;
   flex-basis: 50%; }
+
+@media (max-width: 1080px) {
+  .gallery .left-container {
+    padding-left: 50px; } }
 
 @media (max-width: 479px) {
   .gallery .left-container {
     flex-wrap: wrap;
-    order: 2; } }
+    padding: 0;
+    justify-content: center;
+    order: 2;
+    flex-basis: 80%; } }
 
 .gallery .left-container .image {
-  height: 600px;
+  height: 650px;
   margin-right: 10px;
-  width: 300px;
+  width: 180px;
   background-image: url("/img/left.png");
   background-size: cover;
   background-position: center; }
 
+@media (max-width: 1080px) {
+  .gallery .left-container .image {
+    width: 120px; } }
+
 @media (max-width: 479px) {
   .gallery .left-container .image {
-    margin-top: 20px; } }
+    margin: 2px;
+    width: 81px; } }
 
 .gallery .left-container .image:nth-child(2) {
   background-image: url("/img/center.png");
@@ -339,14 +380,15 @@ body {
   margin-right: 0px; }
 
 .gallery .right-container {
-  margin-left: 75px;
+  margin: 0 45px;
   flex-basis: 800px;
   font-family: "Avenir Next"; }
 
 @media (max-width: 479px) {
   .gallery .right-container {
-    margin-left: 20px;
-    text-align: center; } }
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 auto; } }
 
 .gallery .right-container h1 {
   font-size: 48px;
